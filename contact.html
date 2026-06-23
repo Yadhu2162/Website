@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Battery House</title>
+  <meta name="description" content="Contact Battery House or request a callback for inverter batteries, UPS, solar and service.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header"><div class="topbar"><a class="brand" href="index.html"><span class="brand-mark">BH</span>Battery House</a><nav class="desktop-nav"><a class="nav-link" href="index.html">Home</a><a class="nav-link" href="products.html">Products</a><a class="nav-link" href="services.html">Services</a><a class="nav-link" href="solar.html">Solar</a><a class="nav-link" href="about.html">About</a><a class="nav-link active" href="contact.html">Contact</a></nav><div class="nav-actions"><button class="theme-toggle" type="button" data-theme-toggle>Light</button><a class="btn primary callback" href="#callback-form">Call Back</a><button class="menu-toggle" type="button" data-menu-toggle>Menu</button></div></div><nav class="mobile-nav"><a class="nav-link" href="index.html">Home</a><a class="nav-link" href="products.html">Products</a><a class="nav-link" href="services.html">Services</a><a class="nav-link" href="solar.html">Solar</a><a class="nav-link" href="about.html">About</a><a class="nav-link active" href="contact.html">Contact</a></nav></header>
+  <main>
+    <section class="hero"><div class="wrap"><span class="eyebrow">Contact</span><h1>Ask for a <span class="accent">call back</span>.</h1><p class="lead">The callback form works on this page and all top-bar callback links point here.</p></div></section>
+    <section class="section soft"><div class="wrap contact-grid">
+      <div class="contact-stack">
+        <article class="contact-card"><div class="contact-icon">P</div><div><h3>Phone</h3><p><a href="tel:+919947623634">+91 9947 62 36 34</a><br><a href="tel:+919947000000">+91 9947 00 0000</a></p></div></article>
+        <article class="contact-card"><div class="contact-icon">M</div><div><h3>Email</h3><p><a href="mailto:hello@batteryhouse.in">hello@batteryhouse.in</a><br><a href="mailto:service@batteryhouse.in">service@batteryhouse.in</a></p></div></article>
+        <article class="contact-card"><div class="contact-icon">A</div><div><h3>Address</h3><p>Battery House, Main Road<br>Kanayannur, Ernakulam<br>Kerala 682024</p></div></article>
+        <article class="contact-card"><div class="contact-icon">T</div><div><h3>Hours</h3><p>Monday to Saturday: 9:00 AM to 7:00 PM<br>Sunday: 10:00 AM to 4:00 PM</p></div></article>
+      </div>
+      <form class="form" id="callback-form">
+        <h2>Callback form</h2>
+        <div class="form-row">
+          <label>Your name<input id="name" name="name" type="text" placeholder="Arun Kumar" required></label>
+          <label>Phone number<input name="phone" type="tel" placeholder="+91 9999 000 000" required></label>
+        </div>
+        <div class="form-row">
+          <label>Email<input name="email" type="email" placeholder="you@example.com"></label>
+          <label>Need help with<select id="service" name="service"><option>Inverter battery</option><option>UPS / inverter</option><option>Solar system</option><option>Battery replacement</option><option>Annual maintenance</option><option>Commercial UPS</option></select></label>
+        </div>
+        <label>Message<textarea name="message" placeholder="Tell us your location, load details and preferred callback time."></textarea></label>
+        <button class="btn primary" type="submit">Send Callback Request</button>
+      </form>
+    </div></section>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <footer class="site-footer"><div class="wrap footer-bottom"><span>Battery House contact.</span><a class="footer-link" href="index.html">Back home</a></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
